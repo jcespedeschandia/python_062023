@@ -39,7 +39,57 @@ agente = '007'
 nombre = 'James'
 apellido = 'Bond'
 print("Mi nombre es {}, {} {}. Soy el agente {}, al servicio de la corona.".format(apellido, nombre, apellido,agente))
-print(string.upper(f"Mi nombre es {apellido}, {nombre} {apellido}. Soy el agente {agente}, al servicio de la corona."))
+print(f"Mi nombre es {apellido}, {nombre} {apellido}. Soy el agente {agente}, al servicio de la corona.")
+
+
+## Funciones
+
+def add(a,b):
+    x = a + b
+    return x 
+
+y = add(2,3)
+print(y)
+
+###
+
+def add(a = 1, b = 2):
+    x = a + b
+    return x 
+
+y = add()
+print(y)
+
+def di_hola(nombre):
+    print("Hola " + nombre)
+
+di_hola('Joaquin')
+
+## 
+def flexCount(lowNum, highNum, mult):
+    
+    multiplos = []
+    for i in range(lowNum, highNum + 1, 1):
+        if i % mult == 0:
+            multiplos.append(i)
+    
+    sumaMultiplos = 0
+    for i in multiplos:
+        sumaMultiplos += i
+        
+    return f"Los multiplos de {mult}  en el rango de [{lowNum} y {highNum}] son {multiplos} y su suma total es {sumaMultiplos}."
+
+print(flexCount(20,30,3))
+
+
+
+
+
+
+
+
+
+
 
 
 
