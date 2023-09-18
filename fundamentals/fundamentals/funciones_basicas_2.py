@@ -48,7 +48,7 @@ def valores_mayores_que_el_segundo(lista):
                 lista2.append(i)
         return len(lista2), lista2
 
-print(valores_mayores_que_el_segundo([3,3,5,2,7,8]))
+print(valores_mayores_que_el_segundo([5,2,3,2,1,4]))
 
 #5. ESTA LONGITUD, ESE VALOR: escribe una funcion que acepte dos enteros como parametros: tamaño y valor.
 # La funcion debe crear y devolver una lista cuya longitud sea igual al tamaño dado, y cuyos valores sean todos
